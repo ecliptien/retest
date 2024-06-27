@@ -19,8 +19,8 @@ searchButton.addEventListener('click', () => {
       })
       .then(data => {
         cityName.innerText = data.name;
-        cloud.innerText = `${Math.round(data.main.cloud)}`;
-        rain.innerText = `${Math.round(data.main.rain)}`;
+        cloud.innerText = `${Math.round(data.test.cloud)}`;
+        rain.innerText = `${Math.round(data.test.rain)}`;
     });
     
   }});
