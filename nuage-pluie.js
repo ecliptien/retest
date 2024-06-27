@@ -4,8 +4,8 @@ const weatherCard = document.querySelector('.weather-card');
 const weatherApiKey = "b38445e313331e1ccbe9d534b2ae461d";
 
 const cityName = document.getElementById('city');
-const temp = document.getElementById('temp');
-const icon = document.getElementById('icon');
+const cloud = document.getElementById('clouds')
+const rain = document.getElementById('rain.1h')
 
 
 searchButton.addEventListener('click', () => {
@@ -20,16 +20,6 @@ searchButton.addEventListener('click', () => {
       .then(data => {
         cityName.innerText = data.name;
         temp.innerText = `${Math.round(data.main.temp)}°`;
-        if (data.weather.length) {
-          icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-        } else {
-          icon.src = `https://openweathermap.org/img/wn/02d@2x.png`;
-        }
-  
-        weatherCard.classList.remove('hidden');
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-    }
-  });
+    });
+    
+  }});
