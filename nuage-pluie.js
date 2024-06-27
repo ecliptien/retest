@@ -19,7 +19,7 @@ searchButton.addEventListener('click', () => {
       })
       .then(data => {
         cityName.innerText = data.name;
-        temp.innerText = `${Math.round(data.main.temp)}°`;
+        cloud.innerText = `${Math.round(data.main.cloud)}°`;
     });
     
   }});
