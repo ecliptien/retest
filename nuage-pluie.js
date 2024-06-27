@@ -9,7 +9,7 @@ const rain = document.getElementById('rain.1h')
 
 
 searchButton.addEventListener('click', () => {
-    if (searchInput.value) {
+    if (searchInputt.value) {
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchInputt.value}&units=metric&APPID=${weatherApiKey}`)
       .then(response => {
         if (!response.ok) {
