@@ -10,8 +10,8 @@ const rain = document.getElementById('rain')
 
 
 searchButton.addEventListener('click', () => {
-    if (lat.value) {
-      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${weatherApiKey}`)
+    if (lat.value & lon.value) {
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat.value}&lon=${lon.value}&APPID=${weatherApiKey}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
