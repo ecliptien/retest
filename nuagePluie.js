@@ -19,9 +19,11 @@ searchButton.addEventListener('click', () => {
         return response.json();
       })
       .then(data => {
+        
         cityName.innerText = data.name;
         cloud.innerText = `${Math.round(data.nuagePluie.cloud)}`;
         rain.innerText = `${Math.round(data.nuagePluie.rain)}`;
+        weatherCard.classList.remove('hidden');
     });
     
   }});
