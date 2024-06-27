@@ -10,7 +10,7 @@ const rain = document.getElementById('rain')
 
 
 searchButton.addEventListener('click', () => {
-    if (lat.value & lon.value) {
+    if (lat.value) {
       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${weatherApiKey}`)
       .then(response => {
         if (!response.ok) {
