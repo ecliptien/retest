@@ -23,12 +23,6 @@ searchButton.addEventListener('click', () => {
         cityName.innerText = data.name;
         cloud.innerText = `${Math.round(data.nuagePluie.cloud)}`;
         rain.innerText = `${Math.round(data.nuagePluie.rain)}`;
-        temp.innerText = `${Math.round(data.main.temp)}°`;
-      if (data.weather.length) {
-        icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-      } else {
-        icon.src = `https://openweathermap.org/img/wn/02d@2x.png`;
-      }
         weatherCard.classList.remove('hidden');
     });
     
