@@ -18,8 +18,7 @@ searchButton.addEventListener('click', () => {
         return response.json();
       })
       .then(data => {
-        
-        cityName.innerText = data.name;
+                
         cloud.innerText = `${Math.round(data.nuagePluie.cloud)}`;
         
         weather.innerText = data.weather[0].main;
