@@ -4,7 +4,6 @@ const searchButton = document.getElementById('searchButton');
 const weatherCard = document.querySelector('.weather-card');
 const weatherApiKey = "b38445e313331e1ccbe9d534b2ae461d";
 
-const cityName = document.getElementById('city');
 const cloud = document.getElementById('clouds')
 const rain = document.getElementById('rain')
 
