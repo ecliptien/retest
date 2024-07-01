@@ -22,7 +22,11 @@ searchButton.addEventListener('click', () => {
         
         cityName.innerText = data.name;
         cloud.innerText = `${Math.round(data.nuagePluie.cloud)}`;
-        rain.innerText = `${Math.round(data.nuagePluie.rain)}`;
+        
+        weather.innerText = data.weather[0].main;
+        if (data.rain) {
+          rain.innerText = data.rain['1h'];
+        }
         weatherCard.classList.remove('hidden');
     });
     
