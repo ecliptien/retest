@@ -4,7 +4,7 @@ const searchButton = document.getElementById('searchButton');
 const weatherCard = document.querySelector('.weather-card');
 const weatherApiKey = "b38445e313331e1ccbe9d534b2ae461d";
 
-const cloud = document.getElementById('clouds')
+const clouds = document.getElementById('clouds')
 const rain = document.getElementById('rain')
 
 
@@ -19,7 +19,7 @@ searchButton.addEventListener('click', () => {
       })
       .then(data => {
                 
-        cloud.innerText = `${Math.round(data.nuagePluie.cloud)}`;
+        cloud.innerText = `${Math.round(data.nuagePluie.clouds)}`;
         
         weather.innerText = data.weather[0].main;
         if (data.rain) {
