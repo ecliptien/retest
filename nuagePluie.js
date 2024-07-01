@@ -19,7 +19,7 @@ searchButton.addEventListener('click', () => {
       })
       .then(data => {
                 
-        cloud.innerText = `${Math.round(data.nuagePluie.clouds)}`;
+        clouds.innerText = `${Math.round(data.nuagePluie.clouds)}`;
         
         weather.innerText = data.weather[0].main;
         if (data.rain) {
