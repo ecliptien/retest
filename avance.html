@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<a href="main.html">
+    <button class="btn btn-success   w-100" type="button">température </button>
+</a>
+
+</div>
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La météo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<main>
+  
+  <div class="container">
+    <h1>nuage</h1>
+    <div class="search">
+      <input id="searchInput1" type="text" placeholder="lattitude">
+      <input id="searchInput2" type="text" placeholder="longitude">
+      <button id="searchButton">Rechercher</button>
+    </div>
+
+    <div class="weather-card hidden">
+      <h2 id="lattitude"></h2>
+      <h2 id="longitude"></h2>
+      <div class="weather">
+        <span id="clouds"></span>
+        <img id="icon" src="" width="60">
+        <span id="temp"></span>
+        <span id="weather"></span>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="vent.js"></script>
+</body>
+</html>
